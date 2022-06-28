@@ -108,6 +108,8 @@ export default function App() {
             <span>{("0" + ((seconds / 10) % 100)).slice(-2)}</span>
             </div>
         </div>
+        {tenzies && <p className="instructions2">pssss... type the name of the game for extra fun</p>}
+        
       </main>
   );
 }
