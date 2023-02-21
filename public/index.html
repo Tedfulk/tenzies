@@ -11,25 +11,27 @@
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>
+    <script
+      type="text/javascript"
+      src="https://www.cornify.com/js/cornify.js"
+    ></script>
     <title>Tenzies</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    
   </body>
   <script>
-    let arr = []
-    let secretCode = 'tenzies'
-    window.addEventListener('keyup', (e) => {
-      console.log(e.key)
-      arr.push(e.key)
-      arr.splice(-secretCode.length - 1, arr.length - secretCode.length)
-      console.log(arr)
-      if (arr.join('').includes(secretCode)) {
-        cornify_add()
+    let arr = [];
+    let secretCode = "tenzies";
+    window.addEventListener("keyup", (e) => {
+      // console.log(e.key)
+      arr.push(e.key);
+      arr.splice(-secretCode.length - 1, arr.length - secretCode.length);
+      // console.log(arr)
+      if (arr.join("").includes(secretCode)) {
+        cornify_add();
       }
-    })
+    });
   </script>
 </html>
